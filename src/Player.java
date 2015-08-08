@@ -4,11 +4,6 @@ public class Player {
     private String name;
     private int damage;
 
-    public Player(int health, String name, int damage) {
-        this.health = health;
-        this.name = name;
-        this.damage = damage;
-    }
 
     public int getHealth() {
         return health;
