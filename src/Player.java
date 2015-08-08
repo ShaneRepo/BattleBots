@@ -1,4 +1,4 @@
-
+// Base class others will inherit from
 public class Player {
     private int health;
     private String name;
