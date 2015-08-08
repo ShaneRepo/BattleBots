@@ -6,5 +6,10 @@ public class BattleBots {
         System.out.println(o.getDamage());
         System.out.println(o.getHealth());
         System.out.println(o.getName());
+        // Testing the implementation of an Elf object
+        Elf e = new Elf();
+        System.out.println(e.getDamage());
+        System.out.println(e.getHealth());
+        System.out.println(e.getName());
     }
 }
