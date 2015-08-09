@@ -1,7 +1,14 @@
+import javax.swing.*;
+import java.awt.*;
 import java.util.Scanner;
 
 public class BattleBots {
     public static void main(String[] args) throws InterruptedException {
+        JFrame frame = new JFrame("Battle Bots");
+        frame.setSize(800,600);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(new FlowLayout());
 
         int choice, choice2;
         Scanner scanner = new Scanner(System.in);
