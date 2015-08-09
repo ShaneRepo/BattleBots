@@ -6,10 +6,9 @@ public class Player {
     private String name;
     private int damage;
 
-    public Player(int health, String name, int damage) {
+    public Player(int health, String name) {
         this.health = health;
         this.name = name;
-        this.damage = damage;
     }
 
     public int getHealth() {
@@ -29,6 +28,7 @@ public class Player {
     }
 
     public int getDamage() {
+        int damage = 1 + (int)(Math.random() * 10);
         return damage;
     }
 
