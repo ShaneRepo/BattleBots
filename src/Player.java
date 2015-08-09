@@ -76,7 +76,9 @@ public class Player {
                     System.exit(0);
                 }
                 p1.setHealth(hp1);
+                System.out.println("-------------------------");
                 System.out.println(p1.getName() + " HP " + p1.getHealth() + " --- " + p2.getName() + " HP " + p2.getHealth());
+                System.out.println("-------------------------");
             }while(!isDead);
 
         }
