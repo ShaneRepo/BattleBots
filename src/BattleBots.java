@@ -3,21 +3,27 @@ import java.awt.*;
 import java.util.Scanner;
 
 public class BattleBots {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args)  throws InterruptedException {
         JFrame frame = new JFrame("Battle Bots");
         frame.setSize(800, 600);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(new FlowLayout());
+        FlowLayout flow = new FlowLayout();
+        frame.setLayout(flow);
+        JLabel title = new JLabel("Welcome to Battle Bots");
+        frame.add(title);
+        JPanel panel = new JPanel();
         JButton human = new JButton("Human");
         human.setToolTipText("Choose human character");
-        frame.add(human);
+        panel.add(human);
         JButton orc = new JButton("Orc");
         orc.setToolTipText("Choose Orc character");
-        frame.add(orc);
+        panel.add(orc);
         JButton elf = new JButton("Elf");
         elf.setToolTipText("Choose Elf character");
-        frame.add(elf);
+        panel.add(elf);
+        frame.add(panel);
+
 
         int choice, choice2;
         Scanner scanner = new Scanner(System.in);
