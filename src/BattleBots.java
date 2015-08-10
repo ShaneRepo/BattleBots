@@ -4,28 +4,8 @@ import java.util.Scanner;
 
 public class BattleBots {
     public static void main(String[] args)  throws InterruptedException {
-        JFrame frame = new JFrame("Battle Bots");
-        frame.setSize(800, 600);
+        FrontEnd frame = new FrontEnd();
         frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        FlowLayout flow = new FlowLayout();
-        FlowLayout flow2 = new FlowLayout();
-        frame.getContentPane().setLayout(new FlowLayout());
-        JLabel title = new JLabel("Welcome to Battle Bots");
-        frame.add(title);
-        JPanel panel = new JPanel();
-
-        JButton human = new JButton("Human");
-        human.setToolTipText("Choose human character");
-        panel.add(human);
-        JButton orc = new JButton("Orc");
-        orc.setToolTipText("Choose Orc character");
-        panel.add(orc);
-        JButton elf = new JButton("Elf");
-        elf.setToolTipText("Choose Elf character");
-        panel.add(elf);
-        frame.add(panel);
-
 
         int choice;
         Scanner scanner = new Scanner(System.in);
