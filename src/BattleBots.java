@@ -5,10 +5,19 @@ import java.util.Scanner;
 public class BattleBots {
     public static void main(String[] args) throws InterruptedException {
         JFrame frame = new JFrame("Battle Bots");
-        frame.setSize(800,600);
+        frame.setSize(800, 600);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new FlowLayout());
+        JButton human = new JButton("Human");
+        human.setToolTipText("Choose human character");
+        frame.add(human);
+        JButton orc = new JButton("Orc");
+        orc.setToolTipText("Choose Orc character");
+        frame.add(orc);
+        JButton elf = new JButton("Elf");
+        elf.setToolTipText("Choose Elf character");
+        frame.add(elf);
 
         int choice, choice2;
         Scanner scanner = new Scanner(System.in);
