@@ -9,10 +9,12 @@ public class BattleBots {
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         FlowLayout flow = new FlowLayout();
-        frame.setLayout(flow);
+        FlowLayout flow2 = new FlowLayout();
+        frame.getContentPane().setLayout(new FlowLayout());
         JLabel title = new JLabel("Welcome to Battle Bots");
         frame.add(title);
         JPanel panel = new JPanel();
+
         JButton human = new JButton("Human");
         human.setToolTipText("Choose human character");
         panel.add(human);
@@ -25,7 +27,7 @@ public class BattleBots {
         frame.add(panel);
 
 
-        int choice, choice2;
+        int choice;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to Battle Bots!");
         do {
