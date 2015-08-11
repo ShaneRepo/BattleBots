@@ -6,6 +6,8 @@ public class BattleBots {
     public static void main(String[] args)  throws InterruptedException {
         FrontEnd frame = new FrontEnd();
         frame.setVisible(true);
+        frame.setSize(600,400);
+
 
         int choice;
         Scanner scanner = new Scanner(System.in);
