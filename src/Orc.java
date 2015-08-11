@@ -4,5 +4,4 @@ public class Orc extends Player {
         super(100,"Orc");
     }
 
-
 }

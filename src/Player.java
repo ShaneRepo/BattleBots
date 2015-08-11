@@ -53,8 +53,7 @@ public class Player {
                 }
                 hp2 = (p2.getHealth() - dam1);
 
-                if (hp2 < 1)
-                {
+                if (hp2 < 1) {
                     System.out.println(p1.getName() + " Is victorious! ");
                     isDead = true;
                     System.exit(0);
@@ -69,8 +68,7 @@ public class Player {
                 }
                 hp1 = (p1.getHealth() - dam2);
 
-                if (hp1 < 1)
-                {
+                if (hp1 < 1) {
                     System.out.println(p2.getName() + " Is victorious! ");
                     isDead = true;
                     System.exit(0);
