@@ -10,7 +10,7 @@ public class FrontEnd extends JFrame implements ActionListener {
     JButton elf = new JButton("Elf");
     JLabel pickChar = new JLabel("Choose a Character");
     JLabel title = new JLabel("Welcome to Battle Bots!");
-    JTextArea text = new JTextArea();
+    public static JTextArea text = new JTextArea();
 
 
     public FrontEnd(){
@@ -63,4 +63,6 @@ public class FrontEnd extends JFrame implements ActionListener {
             System.exit(1);
         }
     }
+
+
 }

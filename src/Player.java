@@ -46,7 +46,7 @@ public class Player {
             boolean isDead = false;
             do {
                 dam1 = p1.getDamage();
-                System.out.println(p1.getName() + " Strikes for: " + p1.getDamage());
+                FrontEnd.text.setText(p1.getName() + " Strikes for: " + p1.getDamage());
                 try {
                     TimeUnit.SECONDS.sleep(1);
                 } catch (InterruptedException e) {
@@ -55,13 +55,13 @@ public class Player {
                 hp2 = (p2.getHealth() - dam1);
 
                 if (hp2 < 1) {
-                    System.out.println(p1.getName() + " Is victorious! ");
+                    FrontEnd.text.setText(p1.getName() + " Is victorious! ");
                     isDead = true;
                     System.exit(0);
                 }
                 p2.setHealth(hp2);
                 dam2 = p2.getDamage();
-                System.out.println(p2.getName() + " Strikes for: " + p2.getDamage());
+                FrontEnd.text.setText(p2.getName() + " Strikes for: " + p2.getDamage());
                 try {
                     TimeUnit.SECONDS.sleep(1);
                 } catch (InterruptedException e) {
@@ -70,14 +70,14 @@ public class Player {
                 hp1 = (p1.getHealth() - dam2);
 
                 if (hp1 < 1) {
-                    System.out.println(p2.getName() + " Is victorious! ");
+                    FrontEnd.text.setText(p2.getName() + " Is victorious! ");
                     isDead = true;
                     System.exit(0);
                 }
                 p1.setHealth(hp1);
-                System.out.println("-------------------------");
-                System.out.println(p1.getName() + " HP " + p1.getHealth() + " --- " + p2.getName() + " HP " + p2.getHealth());
-                System.out.println("-------------------------");
+                FrontEnd.text.setText("-------------------------");
+                FrontEnd.text.setText(p1.getName() + " HP " + p1.getHealth() + " --- " + p2.getName() + " HP " + p2.getHealth());
+                FrontEnd.text.setText("-------------------------");
             }while(!isDead);
 
         }
