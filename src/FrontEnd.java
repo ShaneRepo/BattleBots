@@ -25,6 +25,7 @@ public class FrontEnd extends JFrame implements ActionListener {
         con.add(human);
         con.add(orc);
         con.add(elf);
+        con.add(text);
         human.addActionListener(this);
         orc.addActionListener(this);
         elf.addActionListener(this);
@@ -32,6 +33,34 @@ public class FrontEnd extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        Object source = e.getSource();
+        if(source == human){
+            Human h = new Human();
+            Orc o = new Orc();
+            try {
+                Player.battle(h,o);
+            } catch (InterruptedException e1) {
+                e1.printStackTrace();
+            }
+        }else if (source == orc){
+            Orc o = new Orc();
+            Elf el = new Elf();
+            try {
+                Player.battle(o,el);
+            } catch (InterruptedException e1) {
+                e1.printStackTrace();
+            }
+        } else if (source == elf) {
+            Human h = new Human();
+            Elf el = new Elf();
+            try {
+                Player.battle(el, h);
+            } catch (InterruptedException e1) {
+                e1.printStackTrace();
+            }
+        }else {
+            text.setText("Error!");
+            System.exit(1);
+        }
     }
 }

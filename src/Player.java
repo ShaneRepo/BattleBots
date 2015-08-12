@@ -1,3 +1,5 @@
+import javax.swing.*;
+import java.awt.*;
 import java.util.concurrent.TimeUnit;
 
 // Base class others will inherit from
@@ -42,8 +44,7 @@ public class Player {
             int dam2 = 0;
             int hp2 = 0;
             boolean isDead = false;
-            do
-            {
+            do {
                 dam1 = p1.getDamage();
                 System.out.println(p1.getName() + " Strikes for: " + p1.getDamage());
                 try {
