@@ -47,6 +47,7 @@ public class Player {
             do {
                 dam1 = p1.getDamage();
                 FrontEnd.text.setText(p1.getName() + " Strikes for: " + p1.getDamage());
+               // IDEAS?? ANYONE?? FrontEnd.text.getText();
                 try {
                     TimeUnit.SECONDS.sleep(1);
                 } catch (InterruptedException e) {
