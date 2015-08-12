@@ -1,7 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class FrontEnd extends JFrame {
+public class FrontEnd extends JFrame implements ActionListener {
     Container con = getContentPane();
     JButton human = new JButton("Human");
     JButton orc = new JButton("Orc");
@@ -23,6 +25,13 @@ public class FrontEnd extends JFrame {
         con.add(human);
         con.add(orc);
         con.add(elf);
+        human.addActionListener(this);
+        orc.addActionListener(this);
+        elf.addActionListener(this);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
 
     }
 }

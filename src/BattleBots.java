@@ -1,8 +1,10 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Scanner;
 
-public class BattleBots {
+public class BattleBots implements ActionListener{
     public static void main(String[] args)  throws InterruptedException {
         FrontEnd frame = new FrontEnd();
         frame.setVisible(true);
@@ -44,6 +46,10 @@ public class BattleBots {
     }
 
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+    }
 }
 
 
